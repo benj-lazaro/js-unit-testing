@@ -1,0 +1,31 @@
+Choosing a Testing Framework
+----------------------------
+- A test runner is needed in order to execute the (unit) tests
+    - To do is a Testing Framework will be needed
+
+
+- A Testing Framework is a set of tools for writing & running tests
+    - Typically includes
+        - Test Runner           = Executing tests
+        - Assertion Libraries   = Checks if code behaves as expected
+        - Mocking Tools         = Replaces modules with fakes to simulate different scenarios
+        - Coverage Tools        = Measures how much of the code is tested
+
+
+- Popular Testing Frameworks
+    - Jest      
+        - It is widely adopted and used in many projects
+        - It is an older Framework
+        - It has an experimental support for ECMAScripts Modules
+
+    - Mocha
+    - Jasmine
+
+    - Vitest
+        - New framework designed for modern JavaScript
+        - It has the same features and almost identical API of Jest
+        - It supports ECMAScripts Modules, TypeScript and JSX (React)
+        - Lessons learned is directly applicable to Jest
+
+    - Cypress
+    - Playwright 

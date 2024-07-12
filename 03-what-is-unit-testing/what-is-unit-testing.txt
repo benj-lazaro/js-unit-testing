@@ -1,0 +1,47 @@
+What is Unit Testing?
+---------------------
+- It is a form of automated testing where code is written to test if an app works as expected
+    - It offers a faster way of testing than manual testing
+
+    - The codebase consists of two types of code
+        - Application code (production)
+        - Test code (tests)
+
+    - Tests are run everytime changes in the code are made
+
+    - It is an investment in software quality
+    
+    - Write tests that are maintainable, robust and trustworthy
+
+
+- Unit test benefits
+    - Detects (and fix) bugs early
+        - The later a bug is fix, the most costly it is for a business
+        - The cost of a bug
+            - Requirements  = 1x
+            - Design        = 3x
+            - Coding        = 7x
+            - Testing       = 15x
+            - Deployment    = 30x ... 100x
+
+    - Facilitates refactoring
+        - Refactoring is changing the code structure without changing its behavior / functionality
+            - e.g. Moving a few lines of code into a function
+
+    - Improves code quality
+        - Encourages to consider various test & error conditions = robust & reliable code
+
+    - Documentation
+        - Serves as documentation as how a function should / expected to behave 
+        - Help other developers in maintaining the codebase
+
+
+- Mosh Hamedani's opinions on unit testing
+    - Be pragmantic
+        - New proejcts are NOT the best candidate for unit testing
+            - Requirements rapidly chnage and tests break
+            - Ends up spending more time fixing broken tests
+
+        - Stable project that are established and have features with stable requirements
+            - Cover critical modules with tests
+            - Change and refactor with confidence 

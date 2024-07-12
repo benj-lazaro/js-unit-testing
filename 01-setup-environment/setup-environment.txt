@@ -1,0 +1,9 @@
+Set Up The Testing Environment
+------------------------------
+- This course require to download & install
+    - Latest Nodejs
+
+
+- Optionally download & install
+    - Latest VS Code editor
+    

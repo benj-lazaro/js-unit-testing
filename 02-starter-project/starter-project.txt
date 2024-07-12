@@ -1,0 +1,5 @@
+Starter Project
+---------------
+- Clone the starter project files from Mosh Hamedani's Github repository
+    - Github Repo (https://github.com/mosh-hamedani/javascript-testing-starter)
+

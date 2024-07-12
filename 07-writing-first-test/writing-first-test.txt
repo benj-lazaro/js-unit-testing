@@ -1,0 +1,48 @@
+Writing Your First Test
+-----------------------
+- The starter project contains a folder named "src"
+    - Inside the folder, the file "intro.js" contains the code to be tested
+
+
+- To write the first test
+    - Create a folder named "tests"
+        - It has to be on the same directory level as "src"
+
+    - Inside the folder, create a file named "intro.test.js"
+        - This is the file pattern that both Jest & Vitest look for 
+            - By default, Jest & Vitest picks up file with "test" on their filename 
+            - Of course, this convention can be re-configured 
+        
+            <src_filename>.test.js
+
+            
+- Inside the file "intro.test.js"
+    - Import a few functions from Vitest
+        - describe  = Creates a test suite or a group of related tests
+        - test      = Creating a test case
+        - it        = Similar to "test"
+        - expect    = Returns a matcher object that verifies expectations
+
+    - Create a test suite using describe()
+        - 1st parameter = name of the test; typically the name of the function or unit on their test
+        - 2nd parameter = callback function that will be executed by the Test Runner (Vitest)
+
+    - Inside the callback function (of describe())
+        - Call the function it()
+            - 1st parameter = string that represents the test name
+            - 2nd parameter = callback function that will be executed by Vitest
+
+        - Inside the callback function (of it())
+            - Structure the test using the AAA pattern (Arrange, Act & Assert)
+                - Arrange   = setup test environment
+                - Act       = perform the action you wanted to test
+                - Assert    = check the outcome to ensure it matches expectations
+
+            - For the Arrange 
+                - Define arbitraty values for testing
+
+            - For the Act
+                - Type the name of the function (in intro.js)
+                - It will automatically highlight a file to be imported
+                    - Press ENTER
+                    - Automatically add an "import" statement 

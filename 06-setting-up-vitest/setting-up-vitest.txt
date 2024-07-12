@@ -1,0 +1,20 @@
+Setting Up Vitest
+-----------------
+- To install Vitest on the starter project
+    - Open a terminal window within the start project's folder
+
+
+    - Use NPM to install the latest Vitest as a "development dependency"
+        - To prevent test tools from being deployed with the application
+
+        npm i -D vitest
+
+
+    - Open the "package.json" file
+        - Look for the key "scripts" 
+        - Update its contents by adding the following key-value pair 
+
+        "test": "vitest"
+
+        - This ensures that running "npm test" or "npm t"
+            - Vitest will be called and execute the test(s)

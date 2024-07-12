@@ -1,0 +1,41 @@
+Types of Tests
+--------------
+- In automated testing, there are 3 types of tests:
+    - Unit
+        - This focuses on the correctness of individual components (units) of an application in isolation
+            - These includes classes, functions & small modules
+
+        - They are incredably useful in catching bugs early during the development process
+        - They are incredably fast to write and provide immediate feedback
+
+    - Integration
+        - This focuses on how different units of an application work together as a whole
+        - They help identify bugs that may arise when combining different units together
+
+    - End-to-End (E2E)
+        - This focuses on testing the application as a whole
+        - They simulate user interaction with the entire system
+            - From the user interface (UI) down to the backend services 
+
+        - They are excellent in ensuring that the application works seamlessly from the user's perspective
+
+
+- What types of test to write?
+    - Write more Unit tests than Integration tests 
+    - Write more Integration tests than E2E tests
+
+    - This is referred to as the "Testing Pyramid"
+        - This is a suggestion, NOT to be followed religiously
+        - Every application is different
+        - There is NO "one-size-fits-all" in software engineering
+
+    - As tests progresses towards the top of the Testing Pyramid
+        - Speed of the tests will be slower
+        - BUT confidence level (application reliability) will be higher
+
+
+- When writing tests ALWAYS consider
+    - The complexity of the application's code
+    - Time and resources available
+
+    - To come up with a suite of tests that provide the most value
