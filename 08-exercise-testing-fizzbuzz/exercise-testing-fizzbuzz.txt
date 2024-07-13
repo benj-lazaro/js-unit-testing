@@ -1,5 +1,4 @@
 Exercise Testing Fizzbuzz
 -------------------------
-- Based on the previous example
-    - Create a test suite for the fizzBuzz() function stored in intro.js
-    
+- Using the same codebase on the previous example
+    - Add a test suite for the fizzBuzz() function stored in intro.js
