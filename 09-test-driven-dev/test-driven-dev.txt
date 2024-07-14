@@ -1,0 +1,31 @@
+Test Driven Development
+-----------------------
+- Two ways of writing tests
+    - Code First
+        - Write the application code first
+        - Then cover with tests
+
+    - Test First
+        - Write tests
+        - Then produce the application code
+        - This is also referred as Test-Drive Development (TDD)
+
+
+- Test-Driven Development (TDD) is a way of building software
+    - It follows a simple 3-steps cycle
+        - Start by writing a failing test
+        - Write just enough app code to make the test pass
+        - Refactor if necessary
+
+    - It produces code that is 100% covered by tests
+    
+    - It prevents from over-engineering solutions
+
+    - It can be difficult
+        - For 1st time learners of TDD
+        - For complex applications  
+
+    - It is NOT a silver bullet
+        - As a philosophy is great
+        - BUT it does NOT mean that it should ALWAYS write tests using this approach
+        - There is NO "one-size-fits-all" in software engineering
