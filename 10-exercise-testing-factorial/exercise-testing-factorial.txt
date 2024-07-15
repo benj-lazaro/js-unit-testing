@@ -1,0 +1,9 @@
+Exercise Testing Factorial
+--------------------------
+- Write a test suite for the factorial() function that is yet to be written
+    - Returns 1 if given an argument value of 0 or 1
+
+    - Returns the factorial of any positive number as argument value
+
+    - Returns "undefined" if given a negative number as argument value
+        - Use the matcher function .toBeUndefined()
