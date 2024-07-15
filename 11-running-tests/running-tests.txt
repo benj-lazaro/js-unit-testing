@@ -1,0 +1,45 @@
+Running Tests
+-------------
+- The "npm t" or "npm test" offers a sub-menu list test options
+    - By press "h" to show help and bring up the sub-menu
+        - Once you've gotten familiarized with the options
+        - Just directly press the corresponding "single letter" test option
+
+    - p (filter by filename pattern)
+        - Requires the filename of the file to be tested
+
+    - t (filter by test name regex pattern)
+        - Requires the name of the test suite defined within the function describe()
+        - Specifically executes the test running for the specific test suite
+            - Skips over the rest of the tests
+    
+    - a (rerun all tests)
+ 
+
+ - Vitest has its own UI in running tests
+    - This is useful for testing React apps or components
+
+    - To install
+        - Open "package.json" file
+        - In the "scripts" section, add the following line
+        
+            "test:ui": "vitest --ui"
+
+        - Save changes
+
+
+    - To run 
+        - On the terminal, type command:
+
+            npm run test:ui
+
+        - Running for the 1st time, npm will ask to install @vitest/ui
+            - Press "Y" to proceed with installation
+
+
+        - Once installed, re-rung the same CLI command again
+            - Launches the default browser
+            - Loads the Vitest UI
+
+        - The sub-menu items are still available via terminal
+            - Result of the tests will be rendered on the CLI and browser
