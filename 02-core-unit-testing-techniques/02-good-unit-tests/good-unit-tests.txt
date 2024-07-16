@@ -1,0 +1,54 @@
+Characteristics of Good Unit Tests
+----------------------------------
+- If you do NOT know how to write good tests
+    - It is better NOT to write them at all
+    
+    - Writing bad tests is WORST than having NO tests
+        - They do NOT provide value
+        - Prevents from getting the job done
+
+
+- What makes a good test?
+    - Good tests are maintainable, robust and trustworthy
+
+    - Maintainable Tests
+        - Have a clear name
+        - Tests a single behavior
+        - Are small (ideally, less than 10 lines)
+        - Have clear variable / constant names
+        - Are properly formatted (for readability)
+
+    - Robust Tests
+        - A test that is resilient to changes in code
+        
+        - Tests the behavior, NOT the implementation
+            - Tests what the function is supposed to do, NOT how it is done
+        
+        - Avoid tight assertions
+            - Avoid writing assertions against EXACT text or error messages
+            - Both text and error messages can change over time
+             
+    - Trustworthy Tests
+        - A test that can be trusted
+            - When a test is passed, confidently trusts that the code works
+            - When it fails, there is problem in the code and NOT in the test
+            - It should NOT produce false positives / negatives
+
+        - Validates the correct behavior
+            - Making tiny changes to both production & test code ensures the correct behavior
+
+        - Test boundary conditions
+             - Checking for empty arrays, null input & extreme values 
+             - To verify that the test code handles them correctly
+
+        - Are deterministic
+            - Tests should produce the same result EVERY time
+
+        - Are NOT dependent on random data, current date / time or on global / shared state
+            - These values can change from one execution to another
+
+
+- Tests should be isolated
+    - Each test SHOULD BE completely INDEPENDENT from other tests
+    - Write each test as if it is the ONLY test in the world 
+
