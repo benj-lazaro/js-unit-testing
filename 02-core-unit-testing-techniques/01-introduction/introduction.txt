@@ -1,0 +1,19 @@
+Introduction
+------------
+- This section focuses on Core Unit Testing Techniques
+    - Characteristics of good unit tests
+        - Ensures that tests will be reliable, maintainable & effective 
+
+    - Using matchers
+
+    - Writing good assertions
+
+    - Positive and negative Testing
+    
+    - Boundary Testing
+    
+    - Writing parameterized tests
+    
+    - Testing asynchronous code
+    
+    - Setup and tear down
