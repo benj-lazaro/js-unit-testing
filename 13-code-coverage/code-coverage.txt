@@ -1,0 +1,46 @@
+Code Coverage
+-------------
+- To determine how much of the production code is covered with tests
+    - In order to identify areas that are NOT yet tested
+    
+
+- How to ask Vitest to measure an application or project's code Coverage
+    - Open the "package.json" file
+    - In the "scripts" section, add a new line
+
+        "coverage": "vitest run --coverage"
+
+    - Save changes
+
+
+- To run Vitest's code coverage feature
+    - Open the terminal, execute:
+
+        npm run coverage
+
+    - NOTE: First time run, npm will ask to install code coverage tool
+        - Reply "Y" to proceed with the installation
+
+    - Run the CLI command again
+        - Returns a tabled report in the terminal
+            - A folder "coverage" will also be created
+        
+        - EXCLUDE the "coverage" folder from the local repository
+            - Open the file ".gitignore"
+            - Under the line "# Dependency directories"
+            - Add the "coverage/"
+            - Then save changes
+
+
+- To view code coverage in the browser
+    - Inside the folder "coverage"
+        - Open the file "index.html" in the Live Server or the default browser
+        - Loads the generated report in the browser
+
+
+- In the ideal world, we should aim for 100% code coverage
+    - Be pragmatic
+        - Find a balance between delivering features & writing tests
+
+    - Remember the job of a software engineer is to solve problems
+    - 100% code coverage !== Bug-Free Code
