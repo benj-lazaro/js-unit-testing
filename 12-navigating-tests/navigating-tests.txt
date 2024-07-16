@@ -1,0 +1,16 @@
+Navigating Tests in VS Code
+---------------------------
+- Shortcuts in navigating code
+    - Go to File                = CTRL + P (Windows & Linux)
+        - Then an @             = Search for a declared symbol in a function, variable, constant, class
+        - Then a :<line_number> = Jumps to a particular line of code
+
+    - Go back                   = ALT + CTRL + - (Linux)
+        - Previous cursor position
+        - Previous accessed file
+        - Similar to the "Back" button of the browser
+
+    - Go forward                = CTRL+ SHIFT + - (Linux)
+        - Previous cursor position
+        - Previous accessed file
+        - Similar to the "Next" button of the browser
