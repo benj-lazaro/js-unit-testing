@@ -1,0 +1,54 @@
+Using Matchers
+--------------
+- Equality Matchers
+    - toBe()
+        - Used for checking equality on primitive values
+
+    - toEqual()
+        - Used for checking equality on objects
+        - To check the equality of the key-value content of an object; NOT their reference address
+
+
+- Truthy Matchers
+    - toBeTruthy()
+    - toBeFalsy()
+    - toBeNull()
+    - toBeUndefined()
+    - toBeDefined()
+
+
+- Number Matchers
+    - toBeGreaterThan()
+    - toBeGreaterThanOrEqualTo()
+    - toBeLessThan()
+    - toBelessThanOrEqualTo()
+    - toBeCloseTo() 
+        - Assertion for comparing floating point numbers
+
+
+- String Matchers
+    - toMatch()
+        - Assertion for a string matching a regular expression
+        - Userful for writing assertions against text or error messages
+        - Instead of checking for the exact text; searches for patterns (phrases) in a message
+
+
+- Object Matchers
+    - toMatchObject()
+        - To assert that an object matches a subset of the properties of an object 
+
+    - toHaveProperty()
+        - To see if an object has the particular property
+
+
+- Array Matchers
+    - toContain()
+        - To assert that an array contain a certain value
+
+    - toHaveLength()
+        - For asserting the length of an array
+
+
+- Exception Matchers
+    - toThrowError()
+        - Useful when expecting a function to throw an exception
