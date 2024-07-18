@@ -1,0 +1,7 @@
+Writing Good Assertions
+-----------------------
+- Write assertions that are 
+    - NOT too specific or tight
+    - NOT too general or loose
+
+    - Check for the presence of specific keywords or phrase in a string
