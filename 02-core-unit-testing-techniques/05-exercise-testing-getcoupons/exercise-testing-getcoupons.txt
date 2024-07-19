@@ -1,0 +1,12 @@
+Exercise Testing getCoupons
+---------------------------
+- Write test cases in core.test.js for the getCoupons() function defined in the core.js file
+    - Test for the function returning an array of objects
+    
+    - Test each object has two (2) properties
+        - code      = a string
+        - discount  = a number between 0 and 1
+
+    - Group logically related assertions into a single test case
+        - To test a single behavior
+        - To have a single responsibility
