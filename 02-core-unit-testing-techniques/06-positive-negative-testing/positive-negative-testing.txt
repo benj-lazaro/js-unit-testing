@@ -1,0 +1,14 @@
+Positive and Negative Testing
+-----------------------------
+- Positive testing 
+    - Ensures that an application works correctly under normal conditions
+
+
+- Negative testing
+    - Checks how well an application handles unexpected or incorrect input
+
+
+- The advantage of using Vitest's coverage tool (i.e. "npm run coverage")
+    - It visually displays what parts of the application's code that has NOT been tested yet
+    - Open the "index.html" located within the "coverage" folder using the default browser
+    - The untested code is/are highlighted in pink
