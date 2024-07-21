@@ -1,0 +1,3 @@
+Exercise Testing validateUserInput
+----------------------------------
+- Write positive & negative test cases for the function validateUserInput() defined in core.js
