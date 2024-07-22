@@ -1,0 +1,3 @@
+Exercise Testing isValidUsername
+--------------------------------
+- Write test cases for the function isValidUsername() in core.js
