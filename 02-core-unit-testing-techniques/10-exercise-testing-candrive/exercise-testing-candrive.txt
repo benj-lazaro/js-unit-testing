@@ -1,0 +1,3 @@
+Exercise Testing canDrive
+-------------------------
+- Write test cases for the function canDrive() in core.js
