@@ -1,0 +1,7 @@
+Boundary Testing
+----------------
+- It is a testing technique
+    - Where it is focused on the edges (boundaries) of input values
+    - To ensure that the application behaves correctly under extreme conditions
+    - It is about finding those crucial points where things MIGHT go wrong
+
