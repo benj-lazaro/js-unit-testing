@@ -1,0 +1,13 @@
+Setup and Teardown
+------------------
+- Sometimes it is necessary to create / setup a consistent environment before running a test
+    - Then clean up any resources or state after executing a test 
+
+
+- Setup includes importing the following functions from Vitest
+    - beforeEach()  = calls this function before each test case
+    - beforeAll()   = calls this function before ALL test cases
+    - afterEach()   = calls this function after each test case
+    - afterAll()    = calls this function after ALL test cases
+
+    - NOTE: the order on how the function(s) are called does NOT matter
