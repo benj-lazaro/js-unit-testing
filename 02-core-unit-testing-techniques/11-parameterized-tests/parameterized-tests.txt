@@ -1,0 +1,19 @@
+Parameterized Tests
+-------------------
+- Are a way to run the same test multiple times with different sets of input data
+    - Also somtimes called Data Driven tests
+
+
+- This is particularly useful when the testing logic is a bit more complicated
+    - Wherein each test case may have multiple lines
+    - Lines that are similar BUT defer in the values being tested
+    - Removes the need of clever wording for each test case
+
+
+- Implemented by calling the .each() method of the it() function
+    - Passes an array of objects (containing data to be tested) as an argument value
+    
+    - Followed by the pair of parenthesis of the it() function that accepts two (2) arguments
+        - 1st argument  = string value describing the expected behavior (test case)
+        - 2nd argument  = arrow function with the objects in the array as argument values
+                          calls the expect() function & .toBe() method (data set)
