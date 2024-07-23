@@ -1,0 +1,5 @@
+Exercise Testing A Stack
+------------------------
+- A stack is a data structure
+    - That follows the LIFO (Last In First Out) principle
+    
