@@ -1,0 +1,3 @@
+Exercise Parameterized Tests
+----------------------------
+- Implement a parameterized tests for the isPriceInRange() function defined in core.js
