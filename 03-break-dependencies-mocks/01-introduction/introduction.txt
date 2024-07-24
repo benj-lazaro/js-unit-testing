@@ -1,0 +1,9 @@
+Breaking Dependencies Using Mocks
+---------------------------------
+- This section focuses on isolating function testing using mocks (fakes)
+    - Creating mock functions
+    - Mocking modules
+    - Interaction testing using mocks
+    - Partial mocking
+    - Working with spies
+    - Mocking dates / times
