@@ -1,20 +1,22 @@
 Creating Mock Functions
 -----------------------
 - A Mock function is a function that imitates the behavior of a real function
-    - It is used to test a unit (function) in isolation
+    - It is used for testing a function (unit) in isolation
 
 
-- The Vitest has an object "vi" along with the method .fn()
-    - That creates / returns a mock function
+- To create a Mock function
+    - Import objects vi, it, expect, describe from Vitest
+    
+    - The "vi" object used with the method .fn()
+        - Returns / instantiates a Mock function
 
+- To imitate a behavior of an function, use the following methods:
+    - .mockReturnValue()    = Returns a value
+    - .mockResolvedValue()  = Returns a promise 
+    - .mockImplementation() = Provides the logic to the Mock function
+    
 
-- The instantiated "vi" object comes with the following methods
-    - .mockReturnValue()    = Program a mock function to return a value
-    - .mockResolvedValue()  = Program a mock function to aeturn a promise
-    - .mockImplementation   = Provide implementation (of logic) to a mock function
-
-
-- Also came with Matchers to write assertions for a mock function
-    - .toHaveBeenCalled()       = Checks if the mock function has been called
-    - .toHaveBeenCalledWith()   = Checks if the mocked function is called w/ a matching argument value
-    - .toHaveBeenCalledOnce()   = Checks if the mock function is called onced
+- Use the following Matches to write an assertion for the Mock function
+    - .toHaveBeenCalled()       = Check if the Mock function have been called
+    - .toHaveBeenCalledWith()   = Check if the Mock function is called w/ a matching argurment value
+    - .toHaveBeenCalledOnce()   = Check if the Mock function is called once
