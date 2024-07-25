@@ -1,0 +1,10 @@
+Exercise Working with Mock Functions
+------------------------------------
+- Create a mock for the following function 
+    
+    sendText("message") {}
+
+    - Call the mock function
+    - Assert that the mock function is called
+    - Assert that the mock function returns a string value of "ok"
+
