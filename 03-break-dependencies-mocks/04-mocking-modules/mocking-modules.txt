@@ -1,0 +1,22 @@
+Mocking Modules
+---------------
+- Open the file mocking.js (src/libs/moacking.js)
+    - In the function getPriceCurrency()
+        - It calls for the function getExchangeRate() (defined in currency.js)
+            - Current implementation returns a random number using Math.random()
+            - This makes tests untrustworthy as the return value changes after every execution
+
+        - Replace the real function getExchangeRate() with a Mock function
+            - That returns a particular exchange rate instead of a random value
+
+            - Define the Mock function OUTSIDE the test case
+                - Use "vi.mock()"
+                - Pass the relative path of the file that contains the real function               
+                - Vitest replaces EVERY exported function from this module with a Mock function
+
+                - NOTE: This line gets executed FIRST despite the presence of import statements
+                    - In JavaScript, this is referred as "hoisting"
+
+            - To execute the Mock function
+                - Pass it as an argument value to vi.mocked()
+                - Then attach the corresponding method (e.g. .mockReturnValue()) after it
