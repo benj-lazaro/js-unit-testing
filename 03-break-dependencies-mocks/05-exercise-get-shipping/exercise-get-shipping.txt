@@ -1,0 +1,9 @@
+Exercise Testing getShippingInfo
+--------------------------------
+- In the exported function getShippingInfo()
+    - Replace the function getShippingQuote() with a Mock function
+
+
+- Write two test cases
+    - It returns "unavailable" if a quote can NOT be fetched
+    - It returns shipping info if quote can be fetched
