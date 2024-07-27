@@ -1,0 +1,6 @@
+Interaction Testing
+-------------------
+- There are two use cases for Mock functions
+    - To provide values
+    - To test interactions between different units (functions)
+
