@@ -1,0 +1,9 @@
+Exercise Testing submitOrder
+----------------------------
+- Write a Mock function for the function charge() (defined in payment.js)
+    - Assert that the charge() function is called with the right arguments
+
+
+- Write two test cases
+    - Failed payment
+    - Successful payment
