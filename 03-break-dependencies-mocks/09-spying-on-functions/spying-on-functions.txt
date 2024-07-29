@@ -1,0 +1,11 @@
+Spying on Functions
+-------------------
+- Monitors the behavior of functions during test execution
+    - Using "vi.spyOn()"
+
+    - Pass argument values
+        - 1st paramter  =   an object
+        - 2nd paramter  =   a string that represents a method w/in the (aformentioned) object
+
+    - Returns a "spy" object
+        - It is similar to a mock (function) object
