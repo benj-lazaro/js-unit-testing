@@ -1,0 +1,30 @@
+Partial Mocking
+---------------
+- Using vi.mock(), Vitest replaces every exported (actual) function with a Mock function
+    - However there are situations there is a need to keep some of the exported functions from being replaced
+    - This is what Partial Mocking is all about
+
+
+- This is done using vi.mock()
+    - A Factory function will be passed as a 2nd argument
+        - For creating a module
+
+    - On the Factory function (async arrow function)
+        - Pass an argument named importOriginal
+            - This will import the original module
+        
+        - Call the module with an "await" prefix
+
+        - Save the returned value to a constant variable
+
+        - Return a module (enclosed in a pair of {...})
+            - Return all of the functions of the original module
+            - Override the targeted function with a Mock function using "vi.fn()"
+
+    - Use vi.mocked()
+        - Passed the mocked function as an argument value
+        - Call the method .mock()
+        - Followed by a property .calls
+            - Returns an array
+            - Containing arguments passed to the mocked function when it was called
+            - To access argument values on 1st call, reference index 0
