@@ -1,0 +1,8 @@
+Exercise Testing getDiscount()
+------------------------------
+- Write a test suite for the module getDiscount() defined in mocking.js
+    - Create a test suite using the built-in function vi.setSystemTime()
+
+    - Write e two test cases
+        - Returns a 20% discount on Christmas day
+        - Returns no discount outside Christmas day
