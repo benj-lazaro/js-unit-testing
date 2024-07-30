@@ -1,0 +1,21 @@
+To Mock or Not To Mock
+----------------------
+- Mock functions allows us to break dependences and test functions in isolation
+
+
+- The problem with using Mock functions
+    - A test suite become dependent on the Mock function's implementation
+    
+    - This also violates the principle behind
+        - Test the "what" (a mock function do)
+        - NOT the "how" (a mock function is implemented)
+
+    - If a test know how a Mock funcion is implemented
+        - The test can break once the implementation has been changed
+
+    - Avoid oversuing Mock functions
+
+
+- Use Mock function ONLY for mocking external dependences 
+    - e.g. database, API or any services
+        - Services that may NOT be available or slow to work with during test execution
