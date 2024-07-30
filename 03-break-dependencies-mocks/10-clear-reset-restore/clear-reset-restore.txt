@@ -1,0 +1,74 @@
+Clearing, Resetting & Restoring Mocks
+-------------------------------------
+- The Vitest property ".mock" is global
+    - It accumulates information between test cases
+
+    - This information is relevant when asserting a test case 
+        - To have called a Mock function once
+
+        - And creating a Mock function using a spy object & .spyOn() method
+
+
+- It is best practice, to clear the state of each Mocked function or "mock" property
+    - Before or after each test case
+        - Using the hooks .beforeEach() or .afterEach()
+
+    - Using the methods:
+        - .mockClear()
+            - Clears stored information about every call in the ".mock" property
+            - Pratically, (most of the time) this method will be used
+
+        - .mockReset()
+            - Same as .mockClear()
+            - Resets a Mock function's custom implementation into an EMPTY function
+
+                const spy = vi.spyOn(obj, "method");    // Partial mocked function as a spy object
+
+                spy.mockImplementation(() => {...});    // Empty function
+
+        - .mockRestore()
+            - Same as .mockClear()
+            - Restores a Mock function into its original (function) implementation        
+
+        - .clearAllMocks()
+            - Same as .mockClear()
+            - Clear every defined Mocked function in a test suite
+            - Best alternative for a test suite with multiple Mocked functions
+            
+
+- Vitest can also be configured to clear all Mock functions before running each test case
+    - This alleviates the need to clear all Mock functions in each test suite
+
+    - In the root folder
+        - Create a file named "vitest.config.js"
+        - NOTE: This has to be in the same folder level as the "package.json" file
+
+    - Inside vitest.config.js
+        - Import the function defineConfig() from vitest
+
+            import { defineConfig } from "vitest/config";
+
+        - Call the function defineConfig()
+            - Pass the following object as an argument value
+
+            defineConfig({
+                test: {
+                    clearMocks: true,
+                },
+            });
+
+        - Export the function defineConfig() as a default object
+            - Using the prefix "export default"
+
+            export default defineConfig({
+                test: {
+                    clearMocks: true,
+                },
+            });
+
+        - Save changes
+
+        - If "npm t" is currently running
+            - Quit the current process by press "q"
+            - Then restart with "npm t" 
+            - Loads the configuration changes in the Vitest
