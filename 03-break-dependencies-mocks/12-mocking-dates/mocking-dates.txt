@@ -1,0 +1,20 @@
+Mocking Dates
+-------------
+- Trustworthy tests
+    - Are deterministic
+        - They produce the same result every single time
+        - If a test pass, it should ALWAYS pass
+        - If a test fail, it should ALWAYS fail
+
+    - Are NOT dependent on any random data
+    - Are NOT dependent on current date/time
+    - Are NOT dependent on global or shared state
+
+
+- Write a test suite and cases for the isOnline() function
+    - Create a Mock function for the dependency on the current system date/time
+    
+    - Use Vitest's built-in function setSystemTime()
+        - Accepts date/time as a string, as a number or as a Date object
+        
+
