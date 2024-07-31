@@ -1,0 +1,88 @@
+Formatting Code with Prettier
+-----------------------------
+- The most loved code formatting tool
+    - It supports multiple programming languages
+    - It is NOT limited only to JavaScript
+    - It is configurable
+        - According to a project's unique requirements
+
+
+- Benefits
+    - Consistent code style
+    - More readable code
+    - Reduce code review discussion about formatting
+
+
+- To install Prettier via npm
+    - Open terminal
+
+    - Install Prettier as a development dependency
+
+        npm i -D prettier
+
+    - NOTE: In the event of a high severity vulnerability warning
+
+        npm audit fix
+
+    - Verify installation
+        - Open folder "node_modules"
+        - Open folder "bin"
+        - Look for the presence of the executable file "prettier"
+
+    - To run Prettier using npx
+        - Point it to the current folder
+        - Reformat all of the files residing in the current folder
+
+        npx prettier . --write
+
+    - NOTE: If using VS Code, also install the Prettier extension
+        - This will help in formatting the Prettier's configuration file
+
+
+- To run Prettier in the termnal without typing the long CLI command
+    - Open the file package.json
+
+    - In the "scripts" section, add the line
+
+        "format": "prettier . --write"
+
+    - Save changes
+
+    - To run Preitter using npm
+
+        npm run format
+
+
+- To configure Prettier
+    - On the project root folder
+        - Create a file named .prettierrc.json
+
+    - Open the file .prettierrc.json
+        - On this configuration example
+            - It sets the default quotes from double to single quotes
+
+            {
+                "singleQuote": true
+            }
+
+        - Save changes
+
+        - Run Preitter on the terminal using npx
+
+            npx prettier . --write
+
+
+- To format code in the VS Code editor
+    - To call Preitter via keyboard shortcut
+
+        CTRL + SHIFT + I    (Linux)
+
+
+- To automatically format code when saving changes
+    - Open VS Code settings (CTRL + ,)
+
+    - Type "format on save" then press ENTER
+
+    - Tick the box labeled "Editor: Format On Save"
+
+    - Close settings window
