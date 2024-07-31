@@ -1,0 +1,22 @@
+What are Static Analysis Tools
+------------------------------
+- These are tools that analyze source code without executing it
+    - Catch potential errors early in the development process
+    - Enforce coding standard and best practices
+    - Improve code quality
+    - Ensure consistent code quality accross the development team
+
+
+- This section focuses on three (3) Static Analysis Tools
+    - Prettier
+        - Code formatting tool
+        - Ensures consistent code style throughout a project
+
+    - ESLint
+        - Code linting tool
+        - Helps identify and fix code issues
+
+    - TypeScript
+        - JavaScript with static types
+        - Help catch type related errors at compile time
+
