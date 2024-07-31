@@ -1,0 +1,9 @@
+Improving Code Quality with Static Analysis Tools
+-------------------------------------------------
+- This section focuses on using Static Analysis Tools
+    - Formatting code with Prettier
+    - Linting code with ESLint
+    - Catching type errors with TypeScript
+    - Automating code quality checks with Husky
+    
+
