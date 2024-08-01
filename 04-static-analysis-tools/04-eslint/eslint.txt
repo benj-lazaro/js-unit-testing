@@ -1,0 +1,74 @@
+Linting Code with ESLint
+------------------------
+- A popular code quality checker in JavaScript
+    - Catch common coding mistakes early
+    - Enforce coding standards and best practices
+    - Improve code consistency and readability
+    - Facilitate collaboration within development teams
+
+
+- To install ESLint
+    - Check the website (https://eslint.org/) for the updated installation command via npm       
+
+    - Open terminal
+        - Paste copied installation command from website
+
+            npm init @eslint/config@latest
+
+        - Select the following answers for CLI questions
+            - Use for checking syntax and finding problems
+            - JavaScript modules (import/export)
+            - None of these
+            - No (TypeScript)
+            - Node
+            - Yes (install them now)
+            - npm
+
+    - Verify installation
+        - Open folder "node_modules"
+        - Open folder ".bin"
+        - Check the presence of the npx executable file "eslint"
+
+
+- To execute ESLint via npx
+    - Open terminal and execute command
+
+        npx eslint .        = Check files for errors 
+        npx eslint . --fix  = Check files for errors and address all auto-fixable issues
+
+
+- To install VS Code extension ESLint
+    - Open Extensions panel
+
+    - Type "ESLint"
+
+    - Install ESLint extension published by Microsoft
+
+
+- To reconfigure ESLint (npx executable) to address reported error(s) by ESLint
+    - By ignoring the reported line of code
+    - Open the file "eslint.config.js"
+    - Follow latest guidelines (- Reference (https://eslint.org/docs/latest/use/configure/rules))
+
+    - Alternatively, insert the following line above the erroneous line of code
+
+        // eslint-disable-next-line <eslint_rule>
+
+    - Save changes and run ESLint via terminal again
+
+        npx eslint . 
+
+
+- To automate ESLint in npm
+    - Open the file "package.json"
+
+    - Add the following line under "scipts"
+
+        "lint": "eslint . --fix"
+
+    - Save changes
+    
+    - To execute
+    
+        npm run lint
+
