@@ -1,0 +1,39 @@
+Automating Code Quality Checks with Husky
+-----------------------------------------
+- Husky is a popular tool for Git hooks automation that enforces
+    - Code quality and style guidelines
+    - At keypoints in your Git workflow
+    - When Git commit or pushing the code to the repository
+
+    - Website (https://typicode.github.io/husky/)
+
+
+- To install via npm
+
+    npm install --save-dev husky
+
+
+- To setup Husky in a project
+
+    npx husky init
+
+    - It creates a pre-commit hook script within .husky/ folder
+        - This is where to specify command(s) to be executed
+            - Just before commiting the code to Git
+
+    - To format files that are staged (instead of all files) 
+        - Install "lint-stage" as a development dependency
+        - Website (https://www.npmjs.com/package/lint-staged)
+
+            npm i -D lint-staged
+
+        - To verify installation
+            - Check for the presence of npx executeable "lint-staged" in "node_modules/.bin"
+        
+        - Configure lint-staged to run command(s) on staged files
+            - On the project root folder, create the file ".lintstagedrc.json" 
+
+            - Add the following object
+
+            
+
