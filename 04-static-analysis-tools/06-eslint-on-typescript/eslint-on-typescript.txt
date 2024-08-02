@@ -1,0 +1,74 @@
+Running ESLint on TypeScript
+----------------------------
+- The TypScript Compiler (tsc) compiles the TypeScript code into JavaScript
+    - Automatically generate JavaScript file for the corresponding TypeScript file
+        - Stores on the same folder where the TypeScript file is located
+
+    - However the generated JavaScript code conflicts with ESLint
+
+
+- To address this problem
+    - Configure the TypeScript Compiler to place the generated files on a separate folder
+        - Open the file "tsconfig.json"
+
+        - Look for the line "outDir"
+            - Uncomment the line
+            - Update the assigned value from "./" to "./dist"
+            - NOTE: "dist" is a standard naming convention
+
+        - Save changes and run the TypeScript Compiler again
+            - In order to store the generated files in the "./dist" folder
+    
+            npm run check-types
+
+        
+        - Delete old generated JavaScript files by the TypeScript Compiler
+            - To prevent ESLint from catching their errors
+
+
+    - Configure ESLint to ignore the generated files stored in the "./dist" folder
+        - Open the "eslint.config.js"
+
+        - Add the following line to the "export default[...]"
+
+            { ignores: ['dist/'] },
+
+        - Save changes and run ESLinkt via npm
+
+            npm run lint
+
+
+- By default, ESLink does NOT lint TypeScript code
+    - To enable TypeScript support in ESLint
+        - Head to typescript-eslint website (https://typescript-eslint.io/)
+
+    - Install a number of packages via npm 
+        - Reference (https://typescript-eslint.io/getting-started)
+
+        npm install --save-dev eslint @eslint/js @types/eslint__js typescript typescript-eslint       
+
+    - Verify installation by opening up the file "package.json"
+        - Under "devDependencies", look for the line
+        
+            "typescript-eslint": "^8.0.0",
+
+    - Create an "eslint.config.mjs" config file in the root of your project
+        - Populate it with the following
+
+            // @ts-check
+
+            import eslint from '@eslint/js';
+            import tseslint from 'typescript-eslint';
+
+            export default tseslint.config(
+            eslint.configs.recommended,
+            ...tseslint.configs.recommended,
+            );
+        
+        - Save changes
+
+    - Run ESLint via npx
+
+        npx eslint .
+
+        
