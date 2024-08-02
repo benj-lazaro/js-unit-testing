@@ -1,0 +1,75 @@
+Catching Type Errors with TypeScript
+------------------------------------
+- TypeScript is a statically-typed superset of JavaScript
+    - It has everything JavaScript has to offer
+
+    - Data type of variables & function parameters are specified at compile time
+        - Everytime a variable or function parameter(s) is declared
+            - Their data type MUST be explicitly specified
+
+
+- Benefits
+    - Adding types to the codebase
+        - Helps catch type-related issues at compile time instead of runtime
+
+    - Improves code documentation
+        - Makes it easier for others to understand and use your code
+
+    - Better tooling for refactoring
+        - Makes it easier to introduce changes to large codebases w/o introducing errors
+
+    - Stronger codebase with fewer runtime issues
+
+
+- To install TypeScript as a development dependency
+    - Open terminal and execute the command
+
+        npm i -D typescript
+
+
+- To verify installation
+    - Open the folder "node_modules/.bin"
+
+    - Look for npx executable "tsc" (TypeScript Compiler)
+
+
+- To generate TypeScript configuration file (tsconfig.json)
+    - NOTE: Run ONLY once after installing TypeScript
+    
+        npx tsc --init
+
+
+- To execute TypeScript
+
+        npx tsc
+
+
+- To integrate with npm
+    - Open "package.json"
+
+    - In the section "scripts", add the line:
+
+        "check-types": "tsc"
+
+    - To execute with npm
+
+        npm run check-types
+
+
+- To demonstrate TypeScript in action
+    - Create a new file "main.ts" in ~/src/main.ts
+
+    - Open the file "core.js"
+        - Copy the code for the function calculateDiscount()
+        - Paste codebase in "main.ts"
+        - Close "core.js"
+
+    - Refactor copied code by specifying the function parameters' data type
+        - Remove code that checks the data type using the "typeof" operator
+
+    - Create a new vitest file "main.test.ts" in ~/tests
+    
+    - Open the test file "core.test.ts"
+        - Copy the test suite for the calculateDiscount
+        - Paste test suite in "main.test.ts"
+        - Close "core.test.js"
