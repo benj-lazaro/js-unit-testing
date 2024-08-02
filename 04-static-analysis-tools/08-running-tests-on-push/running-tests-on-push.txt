@@ -1,0 +1,22 @@
+Running Tests on Push
+---------------------
+- Create a hook using Husky
+
+    echo "npx vitest run" > .husky/pre-commit
+
+
+- Save changes
+    - Add file from current folder
+
+        git add .
+
+    - Commit files
+
+        git commit -m "Configure pre-push hook"
+
+    - Push files
+        
+        git push
+
+        - Vitest is expected to run prior to pushing the files to the corresponding repo
+            - If a test fails, the push will be aborted
