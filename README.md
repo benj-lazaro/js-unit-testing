@@ -1,3 +1,5 @@
 # JavaScript Unit Testing
 
-Notes from Mosh Hamedani's Mastering JavaScript Unit Testing course; uses Vite (https://vitejs.dev/)
+Notes from Mosh Hamedani's Mastering JavaScript Unit Testing course
+
+Using Vite (https://vitejs.dev/)
